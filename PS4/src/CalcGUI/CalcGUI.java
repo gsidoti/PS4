@@ -73,7 +73,7 @@ public class CalcGUI {
 				double Years = Double.parseDouble(txtYears.getText());
 				double InterestRate = Double.parseDouble(txtInterestRate.getText());
 				FValue proto = new FValue();
-				double Final = proto.returnFutureValue(PValue, InterestRate, Years);
+				double Final = proto.returnFValue(PValue, InterestRate, Years);
 			    double FinalRnd = Math.round(Final*100.0)/100.0;
 				txtFValue.setText("$" + FinalRnd);
 				
